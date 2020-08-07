@@ -14,7 +14,10 @@ export const CollectionItemContainer = styled.div`
     }
     button {
       opacity: 0.85;
-      display: flex;
+      display: block;
+      border:none;
+      background-color: #8BC6EC;
+      background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
     }
   }
   @media screen and (max-width: 800px) {
@@ -36,13 +39,17 @@ export const AddButton = styled(CustomButton)`
   position: absolute;
   top: 255px;
   display: none;
+  min-height:50px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
   @media screen and (max-width: 800px) {
-    min-height:50px;
     display: block;
     opacity: 0.9;
     min-width: unset;
     padding: 0 10px;
-    text-transform: uppercase;
+    
   }
 `;
 
